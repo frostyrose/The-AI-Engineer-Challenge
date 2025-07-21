@@ -34,8 +34,8 @@ export default function Home() {
     setError("");
     setLoading(true);
     try {
-      // Changed to HTTPS for secure backend communication
-      const res = await fetch("https://0.0.0.0:8000/api/chat", {
+      // Changed to Vercel production backend URL
+      const res = await fetch("https://the-ai-engineer-challenge-ochre.vercel.app:8000/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
