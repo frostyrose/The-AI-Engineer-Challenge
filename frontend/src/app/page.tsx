@@ -34,7 +34,8 @@ export default function Home() {
     setError("");
     setLoading(true);
     try {
-      const res = await fetch("http://0.0.0.0:8000/api/chat", {
+      // Changed to HTTPS for secure backend communication
+      const res = await fetch("https://0.0.0.0:8000/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
