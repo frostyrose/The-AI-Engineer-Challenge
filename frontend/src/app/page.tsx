@@ -35,7 +35,7 @@ export default function Home() {
     setLoading(true);
     try {
       // Changed to Vercel production backend URL
-      const res = await fetch("https://the-ai-engineer-challenge-ochre.vercel.app:8000/api/chat", {
+      const res = await fetch("https://the-ai-engineer-challenge-ochre.vercel.app/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
